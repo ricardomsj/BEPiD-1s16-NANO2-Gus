@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NNo-6T-qSc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Aileron-Light.otf">
+            <string>Aileron-Light</string>
+        </mutableArray>
+        <mutableArray key="Aileron-SemiBold.otf">
+            <string>Aileron-SemiBold</string>
+            <string>Aileron-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6SM-On-w6p">
+            <objects>
+                <navigationController id="NNo-6T-qSc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EEz-Xa-ZYi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VvF-3k-ILp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja6-W4-W2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-246"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,35 +42,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guslider 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-EY-OPb">
-                                <rect key="frame" x="107" y="559" width="161" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="161" id="cdA-wc-yr9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xp-z1-a99">
-                                <rect key="frame" x="164" y="8" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xp-z1-a99">
+                                <rect key="frame" x="152" y="629" width="70" height="30"/>
+                                <state key="normal" title="LET'S GO!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="kLL-ly-3r4" kind="show" id="LJz-OW-ihK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-EY-OPb">
+                                <rect key="frame" x="137" y="47" width="100" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cdA-wc-yr9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi there! I'm Gus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55K-NN-dbM">
+                                <rect key="frame" x="123" y="582" width="128" height="21"/>
+                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="17"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Want to learn more about me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-Oc-Mdo">
+                                <rect key="frame" x="79" y="600" width="217" height="21"/>
+                                <fontDescription key="fontDescription" name="Aileron-Light" family="Aileron" pointSize="15"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="539" id="JCu-y1-SO0"/>
+                            <constraint firstAttribute="bottom" secondItem="9xp-z1-a99" secondAttribute="bottom" constant="8" id="1yA-ki-Imv"/>
+                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="JCu-y1-SO0"/>
                             <constraint firstItem="5Wz-EY-OPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SQs-Lw-MVT"/>
-                            <constraint firstAttribute="bottom" secondItem="5Wz-EY-OPb" secondAttribute="bottom" constant="20" symbolic="YES" id="Zqh-yY-IKv"/>
+                            <constraint firstAttribute="bottom" secondItem="5Wz-EY-OPb" secondAttribute="bottom" constant="581" id="Zqh-yY-IKv"/>
+                            <constraint firstItem="9xp-z1-a99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddK-lS-YCH"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0Nb-pg-m9s"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188.5" y="348.5"/>
+            <point key="canvasLocation" x="194.5" y="528.5"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Bh1-Wg-p6Y">
@@ -64,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nag-Nl-EGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697.5" y="348.5"/>
+            <point key="canvasLocation" x="695.5" y="528.5"/>
         </scene>
     </scenes>
 </document>

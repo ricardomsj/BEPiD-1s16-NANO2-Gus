@@ -26,6 +26,9 @@
 		0F3DAC2A1CC0781F008B9B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3DAC301CC078BC008B9B6E /* Guslider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guslider.swift; sourceTree = "<group>"; };
 		0FE1CFF81CC15E4100A091AB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0FE1CFFB1CC18AD500A091AB /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "../../../../../Library/Fonts/Aileron-Regular.otf"; sourceTree = "<group>"; };
+		0FE1CFFC1CC18B7600A091AB /* Aileron-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Light.otf"; path = "../../../../../Library/Fonts/Aileron-Light.otf"; sourceTree = "<group>"; };
+		0FE1CFFD1CC18B7600A091AB /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "../../../../../Library/Fonts/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +61,27 @@
 		0F3DAC1D1CC0781F008B9B6E /* Guslider */ = {
 			isa = PBXGroup;
 			children = (
+				0FE1CFFA1CC1896D00A091AB /* Support */,
 				0F3DAC1E1CC0781F008B9B6E /* AppDelegate.swift */,
 				0F3DAC201CC0781F008B9B6E /* ViewController.swift */,
 				0F3DAC301CC078BC008B9B6E /* Guslider.swift */,
 				0FE1CFF81CC15E4100A091AB /* MenuViewController.swift */,
 				0F3DAC221CC0781F008B9B6E /* Main.storyboard */,
 				0F3DAC251CC0781F008B9B6E /* Assets.xcassets */,
+				0FE1CFFB1CC18AD500A091AB /* Aileron-Regular.otf */,
 				0F3DAC271CC0781F008B9B6E /* LaunchScreen.storyboard */,
 				0F3DAC2A1CC0781F008B9B6E /* Info.plist */,
+				0FE1CFFC1CC18B7600A091AB /* Aileron-Light.otf */,
+				0FE1CFFD1CC18B7600A091AB /* Aileron-SemiBold.otf */,
 			);
 			path = Guslider;
+			sourceTree = "<group>";
+		};
+		0FE1CFFA1CC1896D00A091AB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

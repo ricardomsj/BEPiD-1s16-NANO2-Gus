@@ -8,16 +8,16 @@
 
 import UIKit
 
-class Guslider: UIView {
+public class Guslider: UIView {
     
     // First imageView
-    internal var firstView: UIView
+    public var firstView: UIView
     
     // Second imageView
-    internal var secondView: UIView
+    public var secondView: UIView
     
     // Slider controller button
-    internal var sliderController: UIView
+    public var sliderController: UIView
     
     /*
      Parameters:
@@ -26,7 +26,7 @@ class Guslider: UIView {
         - secondView: Second image view
     */
     
-    internal init(frame: CGRect, firstView: UIView, secondView: UIView) {
+    public init(frame: CGRect, firstView: UIView, secondView: UIView) {
         self.firstView = firstView
         self.secondView = secondView
         sliderController = Guslider.prepareSliderController()
@@ -36,7 +36,28 @@ class Guslider: UIView {
         initializeGestureRecognizer()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    /**
+     Short way to initialize SlidableView. You need target size and images.
+     
+     - parameter frame:       Frame size
+     - parameter firstImage:  First image for sliding
+     - parameter secondImage: Second image for sliding
+     
+     - returns: instance
+     */
+    convenience public init(frame: CGRect, firstImage: UIImage, secondImage: UIImage) {
+        let firstView = UIImageView(frame: frame)
+        firstView.image = UIImage(named: "photo")
+        firstView.contentMode = .ScaleAspectFill
+        
+        let secondView = UIImageView(frame: frame)
+        secondView.image = UIImage(named: "draw")
+        secondView.contentMode = .ScaleAspectFill
+        
+        self.init(frame: frame, firstView: firstView, secondView: secondView)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -45,7 +66,7 @@ class Guslider: UIView {
      
      - parameter maskLocation: x-axis location in frame, where image should be slided
      */
-    internal func updateMask(maskLocation: CGFloat) {
+    public func updateMask(maskLocation: CGFloat) {
         let maskRectPath = UIBezierPath(rect: CGRect(x: self.bounds.minX, y: bounds.minY, width: maskLocation, height: bounds.height))
         let mask = CAShapeLayer()
         mask.path = maskRectPath.CGPath
@@ -58,9 +79,6 @@ class Guslider: UIView {
     private func initializeView() {
         clipsToBounds = true
         sliderController.center = firstView.center
-        
-        print("slider: ", sliderController.center)
-        print("view: \(firstView.center)")
         
         //sliderController.center = firstView.center
         updateMask(center.x)

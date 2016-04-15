@@ -17,5 +17,9 @@ class MenuViewController: UIViewController {
         // Drawing code
     }
     */
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBar.hidden = false
+    }
 
 }

@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Gus_App_Face_ON-2.png",
+      "filename" : "Gus_App_frente_v2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Gus_App_Face_ON-1.png",
+      "filename" : "Gus_App_frente_v2-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Gus_App_Face_ON.png",
+      "filename" : "Gus_App_frente_v2-2.png",
       "scale" : "3x"
     }
   ],

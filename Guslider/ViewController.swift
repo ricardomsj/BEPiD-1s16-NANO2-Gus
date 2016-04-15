@@ -9,25 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rect = CGRect(x: 0, y: 0, width: 300, height: 500)
-        let firstImage = UIImage(named: "draw")
-        let firstImageView = UIImageView(image: firstImage)
-        let secondImage = UIImage(named: "photo")
-        let secondImageView = UIImageView(image: secondImage)
+        let rect = CGRect(x: 0, y: 0, width: 300, height: 450)
         
-        let slider = Guslider(frame: rect, firstView: firstImageView, secondView: secondImageView)
+        guard let firstImage = UIImage(named: "photo"),
+            let secondImage = UIImage(named: "draw") else { return }
+        
+        let slider = Guslider(frame: rect, firstImage: firstImage, secondImage: secondImage)
         
         slider.center = view.center
-        //slider.frame = CGRectMake(view.frame.origin.x, 150, view.frame.size.width, view.frame.size.height)
+        
         view.addSubview(slider)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBar.hidden = true
+        //self.ddd.font = UIFont(name: "Aileron-Regular", size: 12.0)
+        
+        
     }
 }
 
