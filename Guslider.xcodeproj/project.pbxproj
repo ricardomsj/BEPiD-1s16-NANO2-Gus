@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F152DC11CC6A1C20003A592 /* Background_AppGus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DBE1CC6A1C20003A592 /* Background_AppGus.png */; };
+		0F152DC21CC6A1C20003A592 /* Gus_App_frente_v2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DBF1CC6A1C20003A592 /* Gus_App_frente_v2-1.png */; };
+		0F152DC31CC6A1C20003A592 /* Gus_App_fundo_v2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DC01CC6A1C20003A592 /* Gus_App_fundo_v2-1.png */; };
+		0F152DCE1CC6A2CE0003A592 /* Aileron-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DCB1CC6A2CE0003A592 /* Aileron-Light.otf */; };
+		0F152DCF1CC6A2CE0003A592 /* Aileron-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DCC1CC6A2CE0003A592 /* Aileron-Regular.otf */; };
+		0F152DD01CC6A2CE0003A592 /* Aileron-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F152DCD1CC6A2CE0003A592 /* Aileron-SemiBold.otf */; };
 		0F3DAC1F1CC0781F008B9B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3DAC1E1CC0781F008B9B6E /* AppDelegate.swift */; };
 		0F3DAC211CC0781F008B9B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3DAC201CC0781F008B9B6E /* ViewController.swift */; };
 		0F3DAC241CC0781F008B9B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3DAC221CC0781F008B9B6E /* Main.storyboard */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F152DBE1CC6A1C20003A592 /* Background_AppGus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_AppGus.png; path = Images/Background_AppGus.png; sourceTree = "<group>"; };
+		0F152DBF1CC6A1C20003A592 /* Gus_App_frente_v2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Gus_App_frente_v2-1.png"; path = "Images/Gus_App_frente_v2-1.png"; sourceTree = "<group>"; };
+		0F152DC01CC6A1C20003A592 /* Gus_App_fundo_v2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Gus_App_fundo_v2-1.png"; path = "Images/Gus_App_fundo_v2-1.png"; sourceTree = "<group>"; };
+		0F152DCB1CC6A2CE0003A592 /* Aileron-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Light.otf"; sourceTree = "<group>"; };
+		0F152DCC1CC6A2CE0003A592 /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-Regular.otf"; sourceTree = "<group>"; };
+		0F152DCD1CC6A2CE0003A592 /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aileron-SemiBold.otf"; sourceTree = "<group>"; };
 		0F3DAC1B1CC0781F008B9B6E /* Guslider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guslider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3DAC1E1CC0781F008B9B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3DAC201CC0781F008B9B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,9 +38,6 @@
 		0F3DAC2A1CC0781F008B9B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3DAC301CC078BC008B9B6E /* Guslider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guslider.swift; sourceTree = "<group>"; };
 		0FE1CFF81CC15E4100A091AB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		0FE1CFFB1CC18AD500A091AB /* Aileron-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Regular.otf"; path = "../../../../../Library/Fonts/Aileron-Regular.otf"; sourceTree = "<group>"; };
-		0FE1CFFC1CC18B7600A091AB /* Aileron-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-Light.otf"; path = "../../../../../Library/Fonts/Aileron-Light.otf"; sourceTree = "<group>"; };
-		0FE1CFFD1CC18B7600A091AB /* Aileron-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aileron-SemiBold.otf"; path = "../../../../../Library/Fonts/Aileron-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F152DBD1CC6A1C20003A592 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0F152DCA1CC6A2CE0003A592 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0F152DCB1CC6A2CE0003A592 /* Aileron-Light.otf */,
+				0F152DCC1CC6A2CE0003A592 /* Aileron-Regular.otf */,
+				0F152DCD1CC6A2CE0003A592 /* Aileron-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0F3DAC121CC0781F008B9B6E = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +94,13 @@
 				0FE1CFF81CC15E4100A091AB /* MenuViewController.swift */,
 				0F3DAC221CC0781F008B9B6E /* Main.storyboard */,
 				0F3DAC251CC0781F008B9B6E /* Assets.xcassets */,
-				0FE1CFFB1CC18AD500A091AB /* Aileron-Regular.otf */,
+				0F152DBE1CC6A1C20003A592 /* Background_AppGus.png */,
+				0F152DBF1CC6A1C20003A592 /* Gus_App_frente_v2-1.png */,
+				0F152DC01CC6A1C20003A592 /* Gus_App_fundo_v2-1.png */,
 				0F3DAC271CC0781F008B9B6E /* LaunchScreen.storyboard */,
 				0F3DAC2A1CC0781F008B9B6E /* Info.plist */,
-				0FE1CFFC1CC18B7600A091AB /* Aileron-Light.otf */,
-				0FE1CFFD1CC18B7600A091AB /* Aileron-SemiBold.otf */,
+				0F152DCA1CC6A2CE0003A592 /* Fonts */,
+				0F152DBD1CC6A1C20003A592 /* Images */,
 			);
 			path = Guslider;
 			sourceTree = "<group>";
@@ -142,9 +170,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F152DC31CC6A1C20003A592 /* Gus_App_fundo_v2-1.png in Resources */,
+				0F152DC21CC6A1C20003A592 /* Gus_App_frente_v2-1.png in Resources */,
 				0F3DAC291CC0781F008B9B6E /* LaunchScreen.storyboard in Resources */,
+				0F152DD01CC6A2CE0003A592 /* Aileron-SemiBold.otf in Resources */,
+				0F152DCF1CC6A2CE0003A592 /* Aileron-Regular.otf in Resources */,
+				0F152DCE1CC6A2CE0003A592 /* Aileron-Light.otf in Resources */,
 				0F3DAC261CC0781F008B9B6E /* Assets.xcassets in Resources */,
 				0F3DAC241CC0781F008B9B6E /* Main.storyboard in Resources */,
+				0F152DC11CC6A1C20003A592 /* Background_AppGus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
