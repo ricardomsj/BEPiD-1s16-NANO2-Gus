@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Aileron-Light.otf">
@@ -42,6 +43,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_AppGus" translatesAutoresizingMaskIntoConstraints="NO" id="fxn-yP-ipU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xp-z1-a99">
                                 <rect key="frame" x="152" y="629" width="70" height="30"/>
                                 <state key="normal" title="LET'S GO!">
@@ -51,35 +55,50 @@
                                     <segue destination="kLL-ly-3r4" kind="show" id="LJz-OW-ihK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-EY-OPb">
-                                <rect key="frame" x="137" y="47" width="100" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there! I'm Gus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55K-NN-dbM">
+                                <rect key="frame" x="119" y="550" width="172" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="cdA-wc-yr9"/>
+                                    <constraint firstAttribute="width" constant="172" id="vbJ-a3-eVR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="19"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to learn more about me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-Oc-Mdo">
+                                <rect key="frame" x="85" y="571" width="225" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DHA-Ot-cq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aileron-Light" family="Aileron" pointSize="16"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-EY-OPb">
+                                <rect key="frame" x="139" y="29" width="108" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="cdA-wc-yr9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi there! I'm Gus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55K-NN-dbM">
-                                <rect key="frame" x="123" y="582" width="128" height="21"/>
-                                <fontDescription key="fontDescription" name="Aileron-SemiBold" family="Aileron" pointSize="17"/>
-                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Want to learn more about me?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-Oc-Mdo">
-                                <rect key="frame" x="79" y="600" width="217" height="21"/>
-                                <fontDescription key="fontDescription" name="Aileron-Light" family="Aileron" pointSize="15"/>
-                                <color key="textColor" red="0.60392156862745094" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="9xp-z1-a99" secondAttribute="bottom" constant="8" id="1yA-ki-Imv"/>
-                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="JCu-y1-SO0"/>
-                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SQs-Lw-MVT"/>
-                            <constraint firstAttribute="bottom" secondItem="5Wz-EY-OPb" secondAttribute="bottom" constant="581" id="Zqh-yY-IKv"/>
+                            <constraint firstItem="55K-NN-dbM" firstAttribute="centerX" secondItem="5mH-Oc-Mdo" secondAttribute="centerX" constant="7.5" id="4GA-iF-xQq"/>
+                            <constraint firstItem="fxn-yP-ipU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="636-86-WLl"/>
+                            <constraint firstItem="fxn-yP-ipU" firstAttribute="centerX" secondItem="9xp-z1-a99" secondAttribute="centerX" id="6w3-jp-gqQ"/>
+                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="JCu-y1-SO0"/>
+                            <constraint firstItem="5Wz-EY-OPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="SQs-Lw-MVT"/>
+                            <constraint firstItem="fxn-yP-ipU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TWE-x4-LR2"/>
+                            <constraint firstAttribute="bottom" secondItem="5Wz-EY-OPb" secondAttribute="bottom" constant="599" id="Zqh-yY-IKv"/>
                             <constraint firstItem="9xp-z1-a99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddK-lS-YCH"/>
+                            <constraint firstItem="fxn-yP-ipU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="iYB-tt-3fI"/>
+                            <constraint firstItem="5mH-Oc-Mdo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="itc-iA-KRb"/>
+                            <constraint firstItem="9xp-z1-a99" firstAttribute="top" secondItem="5mH-Oc-Mdo" secondAttribute="bottom" constant="37" id="r7M-Fe-kEQ"/>
+                            <constraint firstItem="5mH-Oc-Mdo" firstAttribute="centerX" secondItem="9xp-z1-a99" secondAttribute="centerX" constant="10.5" id="v7g-K0-4sZ"/>
+                            <constraint firstItem="9xp-z1-a99" firstAttribute="top" secondItem="55K-NN-dbM" secondAttribute="bottom" constant="56" id="yrm-E4-B2Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Nb-pg-m9s"/>
@@ -110,4 +129,7 @@
             <point key="canvasLocation" x="695.5" y="528.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background_AppGus" width="750" height="1334"/>
+    </resources>
 </document>
