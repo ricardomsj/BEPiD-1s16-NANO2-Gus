@@ -48,11 +48,11 @@ public class Guslider: UIView {
     convenience public init(frame: CGRect, firstImage: UIImage, secondImage: UIImage) {
         let firstView = UIImageView(frame: frame)
         firstView.image = UIImage(named: "photo")
-        firstView.contentMode = .ScaleAspectFill
+        firstView.contentMode = .scaleAspectFill
         
         let secondView = UIImageView(frame: frame)
         secondView.image = UIImage(named: "draw")
-        secondView.contentMode = .ScaleAspectFill
+        secondView.contentMode = .scaleAspectFill
         
         self.init(frame: frame, firstView: firstView, secondView: secondView)
     }
@@ -69,7 +69,7 @@ public class Guslider: UIView {
     public func updateMask(maskLocation: CGFloat) {
         let maskRectPath = UIBezierPath(rect: CGRect(x: self.bounds.minX, y: bounds.minY, width: maskLocation, height: bounds.height))
         let mask = CAShapeLayer()
-        mask.path = maskRectPath.CGPath
+        mask.path = maskRectPath.cgPath
         secondView.layer.mask = mask
         
         sliderController.center.x = maskLocation
@@ -81,7 +81,7 @@ public class Guslider: UIView {
         sliderController.center = firstView.center
         
         //sliderController.center = firstView.center
-        updateMask(center.x)
+        updateMask(maskLocation: center.x)
         
         addSubview(firstView)
         addSubview(secondView)
@@ -95,13 +95,13 @@ public class Guslider: UIView {
     }
     
     @objc private func gestureHandler(panGestureRecognizer: UIPanGestureRecognizer) {
-        let location = panGestureRecognizer.locationInView(firstView)
+        let location = panGestureRecognizer.location(in: firstView)
         
         if !(self.bounds.minX ... self.bounds.maxX ~= location.x) {
             return
         }
         
-        updateMask(location.x)
+        updateMask(maskLocation: location.x)
         
     }
     

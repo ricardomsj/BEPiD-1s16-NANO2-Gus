@@ -18,8 +18,8 @@ class MenuViewController: UIViewController {
     }
     */
     
-    override func viewWillAppear(animated: Bool) {
-        navigationController?.navigationBar.hidden = false
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
     }
 
 }
