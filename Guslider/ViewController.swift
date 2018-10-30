@@ -32,8 +32,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        navigationController?.navigationBar.hidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
         //self.ddd.font = UIFont(name: "Aileron-Regular", size: 12.0)
         
         
